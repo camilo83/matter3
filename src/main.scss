@@ -1,0 +1,42 @@
+:root {
+  --red: #9e1c21;
+  --white: #ffffff;
+  --black: #1c1c1c;
+  --purple: #ad57bc;
+  --blue: #17a7c6;
+  --roboto: 'Roboto', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+  margin: 0rem;
+  font-family: var(--roboto);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+ul,
+li,
+button,
+a {
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
