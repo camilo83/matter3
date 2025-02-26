@@ -1,0 +1,118 @@
+.mde_video {
+  width: 100%;
+  background-color: rgb(28, 28, 28, 0.6);
+  z-index: 2;
+  position: relative;
+  > div {
+    padding-inline: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2%;
+    h3 {
+      font-size: 48px;
+      font-weight: 700;
+      width: max-content;
+      width: 45%;
+    }
+    .mde_video_info_container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      flex: 1;
+      width: 53%;
+      p {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: justify;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        list-style-type: none;
+      }
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .order-list-item {
+          ul {
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            list-style-type: none;
+          }
+          h4 {
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mde_video {
+    width: 100%;
+    background-color: rgb(28, 28, 28, 0.6);
+    z-index: 2;
+    position: relative;
+    padding-inline: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0rem;
+    > div {
+      padding-inline: 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3rem;
+      h3 {
+        font-size: 40px;
+        font-weight: 700;
+        width: max-content;
+        width: 100%;
+      }
+      .mde_video_info_container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex: 1;
+        width: 100%;
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          text-align: justify;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          list-style-type: none;
+        }
+        ol {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          .order-list-item {
+            ul {
+              padding-top: 1rem;
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+              list-style-type: none;
+            }
+            h4 {
+              font-size: 20px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
