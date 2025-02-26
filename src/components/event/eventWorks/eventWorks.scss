@@ -1,0 +1,112 @@
+.event-works {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  .carousel-slide-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    .carousel-slide {
+      display: flex;
+      transition: transform 0.5s ease;
+      .image-wrapper {
+        min-width: calc(100% / 3);
+        padding: 0 10px;
+        overflow: hidden;
+        .image-container {
+          width: 100%;
+          height: 450px;
+          overflow: hidden;
+          img {
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+          }
+          &:hover img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .left-arrow,
+  .right-arrow {
+    background: none;
+    border: none;
+    width: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 299;
+}
+
+.event-works-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .event-works {
+    display: none;
+  }
+  .event-works-mobile {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    .slick-slider {
+      height: 40vh;
+      width: 100%;
+      .slick-list {
+        height: 40vh;
+        width: 100%;
+        .slick-track {
+          height: 40vh;
+          width: 100%;
+          .slick-slide {
+            height: 40vh;
+            width: 100%;
+            .image-container {
+              height: 40vh;
+              width: 100%;
+              img {
+                height: 40vh;
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+      .slick-arrow {
+        height: 40px;
+        width: 40px;
+        z-index: 10;
+        &:before {
+          font-size: 40px;
+        }
+      }
+      .slick-prev {
+        left: 0;
+      }
+      .slick-next {
+        right: 0;
+      }
+    }
+  }
+}

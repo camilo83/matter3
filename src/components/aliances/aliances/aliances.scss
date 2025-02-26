@@ -1,0 +1,17 @@
+.aliances-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  h2 {
+    font-weight: 800;
+    font-size: 7vw;
+    padding-inline: 5vw;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .aliances-container {
+    width: 100%;
+
+    height: max-content;
+  }
+}

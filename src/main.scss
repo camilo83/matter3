@@ -1,5 +1,5 @@
 :root {
-  --red: #9e1c21;
+  --red: hsl(358, 70%, 36%);
   --white: #ffffff;
   --black: #1c1c1c;
   --purple: #ad57bc;
@@ -30,13 +30,22 @@ h3,
 h4,
 h5,
 h6,
-span,
 p,
 ul,
 li,
 button,
+div,
 a {
   margin: 0;
   padding: 0;
   color: var(--white);
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
+}
+
+.strong {
+  font-weight: 700;
 }

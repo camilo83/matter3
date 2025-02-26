@@ -1,0 +1,66 @@
+.home-page-container {
+  .home-page {
+    position: relative;
+    .section {
+      height: 100vh;
+    }
+
+    .separator-section {
+      max-width: 1600px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 200;
+      background-color: transparent;
+      padding-inline: 5vw;
+    }
+
+    .intro-section {
+      position: relative;
+      max-width: 1600px;
+      margin: 0 auto;
+      z-index: 300;
+      background-color: rgb(28, 28, 28, 0.8);
+      padding-inline: 5vw;
+    }
+
+    .events-section {
+      position: relative;
+      max-width: 1600px;
+      margin: 0 auto;
+      background-color: var(--black);
+      z-index: 400;
+      padding-inline: 5vw;
+    }
+
+    .beyond-matter-section {
+      position: relative;
+      margin: 0 auto;
+      background-color: var(--white);
+      z-index: 500;
+    }
+    .works-section {
+      position: relative;
+      max-width: 1600px;
+      margin: 0 auto;
+      background-color: rgb(28, 28, 28, 0.8);
+      z-index: 600;
+      padding-inline: 5vw;
+    }
+    .contact-section {
+      position: relative;
+      max-width: 1600px;
+      margin: 0 auto;
+      background-color: rgb(28, 28, 28, 0.8);
+      z-index: 700;
+      padding-inline: 5vw;
+    }
+  }
+}
+
+.animation_container {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+}
